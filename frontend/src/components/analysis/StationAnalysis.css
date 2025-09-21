@@ -1,0 +1,46 @@
+.analysis-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.analysis-card h3 {
+  text-align: center;
+  margin-top: 0;
+  color: #333;
+}
+
+.analysis-card p {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+.station-list {
+  list-style: none;
+  padding: 0;
+}
+
+.station-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  border-left: 5px solid;
+}
+
+.station-name {
+  font-weight: 700;
+}
+
+/* Safety level coloring */
+.safety-safe { background-color: #E8F5E9; border-color: #4CAF50; }
+.safety-moderate { background-color: #FFF3E0; border-color: #FF9800; }
+.safety-use-caution { background-color: #FFEBEE; border-color: #F44336; }

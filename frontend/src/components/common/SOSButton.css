@@ -1,0 +1,33 @@
+.sos-button {
+  width: 180px;
+  height: 180px;
+  background-color: #D32F2F; /* Deep red */
+  color: white;
+  border-radius: 50%;
+  border: 8px solid #FFCDD2; /* Light red border */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.sos-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.sos-text {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.sos-subtext {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}

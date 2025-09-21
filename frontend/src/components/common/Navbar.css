@@ -1,0 +1,138 @@
+/* Navbar.css */
+.navbar {
+  background-color: rgba(26, 26, 26, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  position: fixed; /* Make it stick to the top */
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 24px;
+}
+
+.nav-logo {
+  color: #fff;
+  justify-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+  color: #E91E63; /* Pink hover effect */
+}
+
+/* Hamburger Menu Icon */
+.nav-toggler {
+  display: none; /* Hidden on desktop */
+  cursor: pointer;
+}
+
+.nav-toggler div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile View Styles */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%; /* Hide it off-screen */
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: #1a1a1a;
+  }
+
+  .nav-menu.active {
+    left: 0; /* Bring it on-screen */
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item {
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .nav-toggler {
+    display: block; /* Show the hamburger icon */
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+  }
+}
+
+/* Add this to Navbar.css */
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem; /* Slightly smaller to accommodate logo */
+  font-weight: bold;
+}
+
+.nav-logo-img {
+  height: 40px; /* Adjust size as needed */
+  margin-right: 10px;
+  /* Optional: if logo background is not transparent and you want it removed */
+  /* filter: invert(1); */
+}
+
+/* Add this to the bottom of Navbar.css */
+.nav-btn-signup, .nav-btn-logout {
+  background-color: #E91E63;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 1rem;
+  transition: background-color 0.3s ease;
+}
+.nav-btn-signup:hover, .nav-btn-logout:hover {
+  background-color: #c2185b;
+}

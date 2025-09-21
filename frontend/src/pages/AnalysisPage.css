@@ -1,0 +1,25 @@
+.analysis-page-container {
+  padding: 100px 20px 40px 20px;
+  background-color: #f4f7f6;
+  min-height: 100vh;
+}
+
+.analysis-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.analysis-header h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.analysis-header p {
+  color: #666;
+}
+
+.analysis-content {
+  max-width: 800px;
+  margin: 0 auto;
+}

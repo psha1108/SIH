@@ -1,0 +1,56 @@
+.feedback-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border: 1px solid #e0e0e0;
+  position: relative;
+}
+.feedback-text {
+  font-style: italic;
+  color: #333;
+  margin-top: 0;
+}
+.feedback-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
+.feedback-station { font-weight: 600; }
+.feedback-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.vote-btn {
+  background: #f0f2f5;
+  border: 1px solid #ccd0d5;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.vote-btn.upvote:hover { color: green; }
+.vote-btn.downvote:hover { color: red; }
+.vote-count { font-weight: 600; min-width: 20px; text-align: center; }
+.upvote-count { color: green; }
+.downvote-count { color: red; }
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.delete-btn:hover { color: #F44336; }

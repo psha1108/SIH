@@ -1,0 +1,67 @@
+.fake-call-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  text-align: center;
+}
+
+.call-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.call-status {
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  letter-spacing: 2px;
+}
+
+.caller-name {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.call-duration {
+  font-size: 1.5rem;
+  color: #c0c0c0;
+}
+
+.end-call-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.end-call-btn:hover {
+  transform: scale(1.1);
+}
+
+.end-call-icon {
+  font-size: 2rem;
+  transform: rotate(135deg);
+}
+
+.end-call-btn p {
+  margin: 0;
+  font-size: 0.8rem;
+}

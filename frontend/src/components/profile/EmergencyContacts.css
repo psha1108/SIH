@@ -1,0 +1,83 @@
+.contacts-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-phone {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.delete-contact-btn {
+  background: #eee;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-contact-btn:hover {
+  background: #F44336;
+  color: white;
+}
+
+.add-contact-form h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.form-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 15px;
+  align-items: center;
+}
+
+.form-inputs input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #43A047;
+}

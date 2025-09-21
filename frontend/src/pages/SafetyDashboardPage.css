@@ -1,0 +1,26 @@
+.dashboard-container {
+  padding: 120px 20px 40px 20px; /* Padding top is 80px (navbar) + 40px */
+  background-color: #f4f7f6;
+  min-height: 100vh;
+}
+
+.sos-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column on mobile */
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* On screens wider than 768px, switch to a two-column grid */
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

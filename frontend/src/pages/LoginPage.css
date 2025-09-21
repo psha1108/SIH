@@ -1,0 +1,148 @@
+.auth-container { /* Renamed from login-container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fce4ec; /* Light pink background */
+  padding: 20px;
+}
+
+.auth-box { /* Renamed from login-box */
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 450px; /* Slightly wider for signup fields */
+  text-align: center;
+}
+
+.auth-logo { /* Renamed from login-logo */
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.auth-box h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #E91E63;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(233, 30, 99, 0.2);
+}
+
+.input-hint {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 5px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.1);
+  accent-color: #E91E63; /* Colors the checkbox itself */
+}
+
+.auth-btn { /* Renamed from login-btn */
+  width: 100%;
+  padding: 14px;
+  background-color: #E91E63; /* Pink */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.auth-btn:hover {
+  background-color: #c2185b;
+  transform: translateY(-2px);
+}
+
+.link-text {
+  margin-top: 25px;
+  color: #666;
+}
+
+.auth-link {
+  color: #E91E63;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.message.success {
+  background-color: #e8f5e9; /* Light green */
+  color: #2e7d32; /* Dark green */
+  border: 1px solid #a5d6a7;
+}
+
+.message.error {
+  background-color: #ffebee; /* Light red */
+  color: #c62828; /* Dark red */
+  border: 1px solid #ef9a9a;
+}
+
+.security-note {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
